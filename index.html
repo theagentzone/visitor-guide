@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Visitor Guide · Microsoft AI Forum | Dallas · Oct 29</title>
+<meta name="description" content="Agenda, sessions, directions, parking and hotels for the Microsoft AI Forum at Microsoft Las Colinas 1, Thursday, October 29.">
+<style>
+:root{
+  --bg:#f5ead8; --surface:#f9f4ed; --sand:#ebddc5; --line:#dcd3c4;
+  --ink:#201e1d; --muted:#645c50;
+  --accent:#c67139; --accent-strong:#b2622d; --accent-700:#8c491a; --accent-800:#643312; --accent-100:#ffe1d0;
+  --sage:#56633f; --sage-800:#3d472b; --sage-100:#e1eecc; --sage-50:#f0fae1;
+  --font:'Segoe UI',-apple-system,BlinkMacSystemFont,Tahoma,Arial,sans-serif;
+  --r-lg:28px; --r-md:20px; --r-sm:14px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 var(--font);-webkit-font-smoothing:antialiased}
+a{color:var(--accent-700);font-weight:600}
+a:hover{color:var(--accent-800)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:6px}
+h1,h2,h3{margin:0;line-height:1.15;text-wrap:balance}
+p{margin:0;text-wrap:pretty}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:5;background:color-mix(in oklch,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;gap:24px;height:64px}
+.brand{display:flex;align-items:center;gap:10px;color:#5e5e5e;font-weight:600;font-size:19px;text-decoration:none}
+.logo{display:grid;grid-template-columns:10px 10px;gap:1px}
+.logo i{width:10px;height:10px;display:block}
+.links{display:flex;gap:4px;margin-left:auto;overflow-x:auto;scrollbar-width:none}
+.links a{color:var(--ink);text-decoration:none;font-weight:600;font-size:14px;padding:8px 14px;border-radius:999px;white-space:nowrap}
+.links a:hover{background:var(--sand);color:var(--ink)}
+
+/* hero */
+.hero{padding-top:64px;padding-bottom:40px}
+.pill{display:inline-flex;align-items:center;gap:8px;background:var(--accent-strong);color:#fff;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:7px 16px;border-radius:999px}
+.hero h1{font-size:clamp(40px,7vw,76px);letter-spacing:-.02em;margin-top:22px;max-width:14ch}
+.hero h1 span{color:var(--accent-700)}
+.tagline{font-size:clamp(20px,2.4vw,26px);color:var(--sage);font-weight:600;margin-top:14px}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:40px}
+.fact{background:var(--surface);border-radius:var(--r-md);padding:20px 22px}
+.fact .k{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-700)}
+.fact .v{font-size:17px;font-weight:600;margin-top:6px;line-height:1.4}
+.fact .s{font-size:14px;color:var(--muted);margin-top:2px}
+.note{margin-top:12px;background:var(--sage-100);color:var(--sage-800);border-radius:var(--r-md);padding:16px 22px;font-size:15px}
+
+/* sections */
+section.block{padding-top:28px;padding-bottom:28px}
+.card{background:var(--surface);border-radius:var(--r-lg);padding:clamp(24px,4vw,44px)}
+.kicker{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-700)}
+.card h2{font-size:clamp(26px,3.2vw,34px);margin-top:8px}
+.lede{color:var(--muted);margin-top:10px;max-width:60ch}
+
+/* agenda */
+.agenda{list-style:none;margin:24px 0 0;padding:0;display:grid;gap:4px}
+.agenda li{display:grid;grid-template-columns:150px minmax(0,1fr);gap:16px;padding:14px 18px;border-radius:var(--r-sm)}
+.agenda .t{font-weight:600;color:var(--muted);font-size:15px;font-variant-numeric:tabular-nums}
+.agenda .what strong{display:block;font-size:16px}
+.agenda .what small{display:block;color:var(--muted);font-size:14px}
+.agenda .brk{background:var(--sage-100);color:var(--sage-800)}
+.agenda .brk .t{color:var(--sage-800)}
+.agenda .split{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px}
+.agenda .split a{display:block;text-decoration:none;color:inherit;background:#fff;border-radius:12px;padding:10px 14px}
+.agenda .split a:hover{background:var(--accent-100)}
+.tag{display:inline-block;background:var(--accent-100);color:var(--accent-800);border-radius:999px;padding:1px 10px;font-size:12px;font-weight:700;margin-bottom:4px}
+
+/* sessions */
+.sessions{display:grid;gap:16px;margin-top:24px}
+.session{border-radius:var(--r-md);padding:clamp(22px,3vw,32px);display:grid;gap:14px}
+.session.key{background:var(--accent-100)} .session.key .kicker,.session.key .leave b{color:var(--accent-700)}
+.session.it{background:var(--sage-100)} .session.it .kicker,.session.it .leave b{color:var(--sage-800)}
+.session.biz{background:var(--sand)} .session.biz .kicker,.session.biz .leave b{color:var(--accent-800)}
+.session h3{font-size:clamp(21px,2.4vw,26px)}
+.session ul{margin:0;padding-left:20px;display:grid;gap:8px;font-size:15px}
+.leave{background:#fff;border-radius:var(--r-sm);padding:14px 18px;font-size:15px}
+.pair{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:16px}
+
+/* getting here */
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 26px;border-radius:999px;font-weight:700;font-size:15px;text-decoration:none}
+.btn-primary{background:var(--accent-strong);color:#fff}
+.btn-primary:hover{background:var(--accent-700);color:#fff}
+.btn-secondary{border:2px solid var(--accent);color:var(--accent-700)}
+.btn-secondary:hover{background:var(--accent-100)}
+.address{font-size:17px;margin-top:14px;line-height:1.55}
+.routes{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr));gap:16px;margin-top:28px}
+.route{background:#fff;border-radius:var(--r-md);padding:24px 26px}
+.route h3{font-size:19px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.dist{background:var(--accent-100);color:var(--accent-800);font-size:12px;font-weight:700;border-radius:999px;padding:2px 10px}
+.route ol{margin:14px 0 0;padding-left:22px;display:grid;gap:6px;font-size:15px}
+
+/* parking */
+.parking{background:var(--sage-100);color:#272e1b}
+.parking .kicker{color:var(--sage-800)}
+.park-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:28px;margin-top:22px;align-items:start}
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:16px;counter-reset:s}
+.steps li{display:grid;grid-template-columns:30px minmax(0,1fr);gap:12px;font-size:15px}
+.steps li::before{counter-increment:s;content:counter(s);width:28px;height:28px;border-radius:50%;background:var(--sage);color:#fff;font-weight:700;font-size:13px;display:grid;place-items:center}
+.callout{background:var(--sage-50);border-radius:var(--r-sm);padding:16px 20px;font-size:15px;color:var(--sage-800);margin-top:20px}
+.map{margin:0;border-radius:var(--r-md);overflow:hidden;background:#fff}
+.map img{display:block;width:100%;height:auto}
+.map figcaption{font-size:13px;color:var(--sage-800);padding:10px 16px}
+
+/* hotels */
+.hotels{background:var(--sand)}
+.hotel-list{list-style:none;margin:20px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:0 32px}
+.hotel-list li{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-top:1px solid #d8c8ad}
+.hotel-list b{display:block;font-size:15px}
+.hotel-list span{font-size:13px;color:var(--muted)}
+.hotel-list em{font-style:normal;font-weight:700;color:var(--sage);font-size:13px;white-space:nowrap}
+
+footer{padding-top:40px;padding-bottom:56px;color:var(--muted);font-size:14px}
+footer .bye{font-size:24px;font-weight:700;color:var(--ink);margin-bottom:6px}
+
+@media (max-width:640px){
+  .agenda li{grid-template-columns:1fr;gap:4px}
+  .links a{padding:8px 10px}
+  .brand span{display:none}
+}
+@media print{.nav{position:static}.btns{display:none}body{background:#fff}}
+</style>
+</head>
+<body>
+
+<nav class="nav" aria-label="Page sections">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Microsoft AI Forum Dallas, top of page">
+      <span class="logo" aria-hidden="true"><i style="background:#f25022"></i><i style="background:#7fba00"></i><i style="background:#00a4ef"></i><i style="background:#ffb900"></i></span>
+      <span>Microsoft</span>
+    </a>
+    <div class="links">
+      <a href="#agenda">Agenda</a>
+      <a href="#sessions">Sessions</a>
+      <a href="#directions">Directions</a>
+      <a href="#parking">Parking</a>
+      <a href="#hotels">Hotels</a>
+    </div>
+  </div>
+</nav>
+
+<main id="top">
+  <header class="hero wrap">
+    <span class="pill">In-person event · Visitor guide</span>
+    <h1>Microsoft AI Forum <span>| Dallas</span></h1>
+    <p class="tagline">From Copilot to agentic AI.</p>
+
+    <div class="facts">
+      <div class="fact"><div class="k">When</div><div class="v">Thursday, October 29</div><div class="s">11:00 AM – 6:00 PM CT, starting with lunch</div></div>
+      <div class="fact"><div class="k">Where</div><div class="v">Microsoft Las Colinas 1 (LC1)</div><div class="s">7000 N. State Highway 161, Irving, TX</div></div>
+      <div class="fact"><div class="k">Questions</div><div class="v"><a href="tel:+14697750000">469-775-0000</a></div><div class="s">LC1 reception</div></div>
+    </div>
+    <p class="note"><strong>One quick ask:</strong> please accept the meeting invitation we sent so the day is saved to your calendar and we can plan seating and lunch for you.</p>
+  </header>
+
+  <section class="block wrap" id="agenda">
+    <div class="card">
+      <div class="kicker">Agenda · Thursday, October 29</div>
+      <h2>How the day runs</h2>
+      <ol class="agenda">
+        <li><span class="t">11:00 – 12:00</span><span class="what"><strong>Lunch and networking</strong></span></li>
+        <li><span class="t">12:00 – 12:15</span><span class="what"><strong>Welcome</strong><small>Microsoft Leadership Team</small></span></li>
+        <li><span class="t">12:15 – 1:45</span><span class="what"><span class="tag">Keynote</span><strong>Microsoft AI Vision: From Copilot to Agentic AI</strong></span></li>
+        <li class="brk"><span class="t">1:45 – 2:00</span><span class="what">Break</span></li>
+        <li><span class="t">2:00 – 3:00</span><span class="what">
+          <span class="split">
+            <a href="#it-breakout"><span class="tag">Room 1</span><strong>IT breakout</strong><small>Demos and roadmap discussions</small></a>
+            <a href="#biz-breakout"><span class="tag">Room 2</span><strong>Business breakout</strong><small>Workflows, outcomes, adoption</small></a>
+          </span></span></li>
+        <li class="brk"><span class="t">3:00 – 3:15</span><span class="what">Break</span></li>
+        <li><span class="t">3:15 – 4:00</span><span class="what"><strong>Customer panel</strong><small>Insight Global (Partner)</small></span></li>
+        <li><span class="t">4:00 – 4:15</span><span class="what"><strong>Closing and next steps</strong></span></li>
+        <li class="brk"><span class="t">4:30 – 6:00</span><span class="what">Happy hour</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="block wrap" id="sessions">
+    <div class="card">
+      <div class="kicker">The sessions</div>
+      <h2>What you'll see and take away</h2>
+      <p class="lede">Everyone joins the keynote. At 2:00 PM, the room splits into two breakouts, one for IT and one for business leaders.</p>
+      <div class="sessions">
+        <article class="session key">
+          <div class="kicker">Keynote · 12:15 – 1:45 PM</div>
+          <h3>Microsoft AI Vision: From Copilot to Agentic AI</h3>
+          <p>AI is moving from answering questions to finishing work. See what that means for your organization, and how to adopt it responsibly.</p>
+          <ul>
+            <li>See one workflow at every level of delegation: ask, delegate, build, and ongoing coordination</li>
+            <li>Understand the new Copilot experience: Home, Code, and Autopilot</li>
+            <li>Learn when to ask, delegate, build, or hand work to an always-on teammate</li>
+            <li>See where trust, governance, and human judgment fit, and what it costs</li>
+          </ul>
+          <p class="leave"><b>Leave with:</b> a clear view of the path from assistance to delegated work, anchored in trusted context</p>
+        </article>
+        <div class="pair">
+          <article class="session it" id="it-breakout">
+            <div class="kicker">IT breakout · 2:00 – 3:00 PM · Room 1</div>
+            <h3>Demos and roadmap discussions</h3>
+            <p>See the demos, the roadmap, and the controls behind secure, scalable AI adoption.</p>
+            <ul>
+              <li><strong>From Copilot assistant to delegation with Cowork:</strong> a bounded task becomes a finished, editable deliverable, with admins and reviewers in the loop</li>
+              <li><strong>Democratizing solution building with Copilot Code:</strong> build purpose-built solutions, and know when to choose Code or a custom business agent (preview)</li>
+              <li><strong>Your digital teammate, Autopilot:</strong> persistent work changes identity, boundaries, and monitoring needs (preview)</li>
+              <li><strong>Manage AI spend with confidence:</strong> a consumption-and-value model with limits and outcome measures</li>
+              <li><strong>The control plane for AI agents, Agent 365:</strong> observe, govern, and secure agents with human oversight</li>
+            </ul>
+            <p class="leave"><b>Leave with:</b> your prerequisites, a first bounded deployment, and a control model</p>
+          </article>
+          <article class="session biz" id="biz-breakout">
+            <div class="kicker">Business breakout · 2:00 – 3:00 PM · Room 2</div>
+            <h3>Workflows, outcomes, adoption</h3>
+            <p>Turn AI interest into measurable outcomes: pick the right workflow, prove the value, keep it accountable.</p>
+            <ul>
+              <li><strong>Workflows:</strong> choose a meaningful initiative before choosing features</li>
+              <li><strong>Measurable outcomes with Copilot:</strong> measure useful work completed, not prompts submitted</li>
+              <li><strong>Cowork:</strong> a complete, reviewed deliverable, such as a client briefing, with human approval</li>
+              <li><strong>Agent sprawl control (Studio and Agent 365):</strong> keep business agents visible, owned, and within bounds</li>
+              <li><strong>FinOps:</strong> what improved, at what quality, at what cost</li>
+            </ul>
+            <p class="leave"><b>Leave with:</b> one workflow, business and IT owners, and one outcome measure</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block wrap" id="directions">
+    <div class="card">
+      <div class="kicker">Getting here</div>
+      <h2>Microsoft Las Colinas 1</h2>
+      <p class="address">Building LC1<br>7000 N. State Highway 161<br>Irving, TX 75039</p>
+      <div class="btns">
+        <a class="btn btn-primary" href="https://www.bing.com/maps?q=Microsoft+Las+Colinas+1+7000+N+State+Highway+161+Irving+TX+75039" target="_blank" rel="noopener">Open in Bing Maps</a>
+        <a class="btn btn-secondary" href="https://www.bing.com/search?q=weather+Irving+TX+75039" target="_blank" rel="noopener">Check the weather</a>
+      </div>
+      <div class="routes">
+        <div class="route">
+          <h3>From DFW Airport <span class="dist">~8 mi</span></h3>
+          <ol>
+            <li>Take the North exit.</li>
+            <li>Take the ramp right for SR-114 East / John Carpenter Fwy toward Irving / Downtown Dallas.</li>
+            <li>Travel Hwy 114 for 3.9 mi, then take the ramp right toward President George Bush Turnpike / SH-161.</li>
+            <li>At the intersection, turn left onto SH-161 and stay on the feeder road.</li>
+            <li>Travel 0.6 mi. 7000 SH-161 is on the right.</li>
+          </ol>
+        </div>
+        <div class="route">
+          <h3>From Dallas Love Field <span class="dist">~12 mi</span></h3>
+          <ol>
+            <li>Depart Cedar Springs Rd toward Aviation Pl.</li>
+            <li>Turn right onto W. Mockingbird Ln.</li>
+            <li>Travel 2.3 mi, then turn right onto the E John W Carpenter Fwy service road.</li>
+            <li>Take the ramp left onto the freeway and follow signs for Hwy 183 West for 1.7 mi.</li>
+            <li>Keep right onto Hwy 114 West / E John W Carpenter Fwy for 5.5 mi.</li>
+            <li>Take the ramp right toward President George Bush Turnpike / SH-161.</li>
+            <li>Turn right onto the SH-161 service road.</li>
+            <li>Travel 0.5 mi. 7000 SH-161 is on the right.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block wrap" id="parking">
+    <div class="card parking">
+      <div class="kicker">Parking &amp; check-in</div>
+      <h2>Park out front, enter at the main doors</h2>
+      <div class="park-grid">
+        <div>
+          <ol class="steps">
+            <li><span>Guest parking runs along the front of buildings LC1 and LC2, and along the north side of LC2.</span></li>
+            <li><span>If visitor spaces are full, you're welcome to park in the employee garage.</span></li>
+            <li><span>Check in at the front reception desk. Both buildings share a main entrance at the front.</span></li>
+          </ol>
+          <p class="callout"><strong>Coming from the garage?</strong> The back entrance is badge-only. A Microsoft employee will need to badge you in and walk you to reception, so we recommend going around to the front.</p>
+        </div>
+        <figure class="map">
+          <img src="parking-map.png" alt="Map of Microsoft Las Colinas: guest parking in front of LC1 and LC2 and on the north side of LC2; employee parking garage behind LC2; entrances from TX-161 / George Bush Turnpike and Sierra Drive" loading="lazy">
+          <figcaption>Guest and employee parking at Las Colinas</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="block wrap" id="hotels">
+    <div class="card hotels">
+      <div class="kicker">Staying overnight</div>
+      <h2>Hotels nearby</h2>
+      <ul class="hotel-list">
+        <li><div><b>NYLO Dallas Las Colinas</b><span>1001 W Royal Lane, Irving, TX 75039</span></div><em>0.3 mi</em></li>
+        <li><div><b>Hilton Garden Inn Las Colinas</b><span>7516 Las Colinas Blvd, Irving, TX 75063</span></div><em>0.8 mi</em></li>
+        <li><div><b>Courtyard Marriott Las Colinas</b><span>1151 W Walnut Hill Lane, Irving, TX 75038</span></div><em>1 mi</em></li>
+        <li><div><b>Residence Inn Marriott Las Colinas</b><span>950 Walnut Hill Lane, Irving, TX 75038</span></div><em>1.1 mi</em></li>
+        <li><div><b>Wingate by Wyndham Las Colinas</b><span>850 W Walnut Hill Lane, Irving, TX 75038</span></div><em>1.1 mi</em></li>
+        <li><div><b>Hyatt Place Dallas Las Colinas</b><span>5455 Green Park Drive, Irving, TX 75038</span></div><em>1.3 mi</em></li>
+        <li><div><b>Aloft Las Colinas</b><span>122 E John Carpenter Fwy, Irving, TX 75062</span></div><em>2.7 mi</em></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap">
+  <p class="bye">See you on the 29th.</p>
+  <p>Questions before the day? Call LC1 reception at <a href="tel:+14697750000">469-775-0000</a>.</p>
+</footer>
+
+</body>
+</html>
